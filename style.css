@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+  
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    background-color: rgb(32,86,120);
+    color: white;
+} 
+
+/* Header Navbar Styles */
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background-color: rgb(4,27,43);
+} 
+  
+
+  
+.logo-heading { 
+    color: #fff; 
+    padding: 0 5rem; 
+} 
+  
+.menu { 
+    padding: 0 5rem; 
+} 
+  
+.hamburger { 
+    display: none; 
+    color: #fff; 
+    font-size: 25px; 
+} 
+  
+.cross-icon { 
+    display: none; 
+} 
+  
+.menu .menu-list { 
+    display: flex; 
+    list-style: none; 
+} 
+  
+.menu-list .menu-list-items { 
+    padding: 0.5rem 1rem; 
+} 
+  
+@media screen and (min-width: 856px) and (max-width: 1024px) { 
+    .menu-list .menu-list-items { 
+        padding: 0.5rem 0.3rem; 
+    } 
+} 
+  
+/* Main Hero Section Styles */
+.hero { 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: start; 
+    /* margin: 4.8rem 0; */
+    background-image: url(./images/background.avif); 
+} 
+  
+.hero .intro { 
+    text-align: center; 
+    margin: 0 5rem; 
+} 
+  
+.hero .intro-buttons { 
+    margin: 2rem 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+} 
+ 
+.hero .intro .headings {
+    text-align: center;
+    margin: auto;
+}
+
+.hero .intro .web-developer img {
+    height: 250px;
+    width: 250px;
+}
+
+/* About section styles */
+.about { 
+    display: flex; 
+    align-items: center; 
+    background-color: rgb(32,86,120);
+    justify-content: space-between; 
+    width: 100%; 
+} 
+  
+.about .about-text { 
+    width: 450px; 
+    color: #fff; 
+    padding: 5rem 1rem 5rem 5rem; 
+} 
+  
+.about .about-image img { 
+    height: 400px; 
+    width: 400px; 
+    /* padding: 5rem 5rem 5rem 1rem;  */
+    margin-right: 150px;
+    border-radius: 50%;
+} 
+  
+/* Skills section styles */
+.skills { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+    /* background-color: white; */
+} 
+  
+.port-card { 
+    padding: 0 !important; 
+    background: none !important; 
+    /* border: 2px solid #000;  */
+} 
+  
+.port-card .image { 
+    width: 100%; 
+} 
+  
+.port-card img { 
+    height: 100px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+} 
+  
+/* Projects section styles */
+.projects { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    background-color: rgb(32,86,120);
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+  
+.my-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 2rem 0; 
+} 
+  
+.my-row .my-col { 
+    text-align: center; 
+    width: 30%; 
+} 
+  
+.my-card { 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+    padding: 1rem; 
+} 
+  
+.icon { 
+    height: 100px; 
+    width: 100px; 
+    border-radius: 50%; 
+    background-color: #363D73; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+  
+.icon svg { 
+    font-size: 30px; 
+    color: #fff; 
+}
+
+
+.project-skills img {
+    height: 50px;
+    width: 50px;
+}
+
+.img1p1 > img {
+    width: 700px;
+    height: 250px;
+}
+
+.img2p2 > img {
+    width: 700px;
+    height: 250px;
+}
+
+/* Contact section styles */
+.contact { 
+    padding: 0 5rem; 
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(32,86,120);
+} 
+  
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+    margin: auto;
+} 
+
+  
+.contact-details { 
+    margin: auto;
+} 
+          
+  
+/* utility classes */
+.greet-heading { 
+    font-size: 1.3rem; 
+    font-weight: lighter; 
+    margin: 0; 
+    letter-spacing: 1px; 
+} 
+  
+.my-heading { 
+    font-size: 2.5rem; 
+    margin: 0; 
+} 
+  
+.sub-heading { 
+    margin: 0; 
+    font-size: 0.8rem; 
+    color: #ccc; 
+    font-weight: lighter; 
+} 
+  
+.links:hover { 
+    border-bottom: 2px solid #fff; 
+} 
+  
+.links { 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.25s; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: #fff; 
+} 
+  
+
+  
+.heading-span { 
+    font-weight: bolder; 
+} 
+  
+.text-center { 
+    text-align: center; 
+} 
+  
+.small-para { 
+    font-size: 14px; 
+    color: #fff; 
+} 
+  
+.white-text { 
+    color: #fff; 
+} 
+  
+.blue-text { 
+    color: #363D73; 
+}
+
+
+/* Responsive CSS file styles defined for smaller width devices */
+/* CSS for tablet devices */
+@media screen and (min-width: 576px) and (max-width: 820px) { 
+    .logo { 
+        padding: 0 3rem; 
+    } 
+  
+    .hamburger { 
+        display: block; 
+        padding: 0 3rem; 
+    } 
+  
+    .menu { 
+        position: absolute; 
+        right: 0; 
+        /* padding: 0 3rem;  */
+        top: 75px; 
+        background-image: linear-gradient(180deg, #74D7BB, #53C8B6, #35A99C); 
+        display: none; 
+        transition: all 0.25s; 
+    } 
+  
+    .menu .menu-list { 
+        flex-direction: column; 
+    } 
+  
+    .about { 
+        flex-direction: column; 
+    } 
+  
+    .about .about-text { 
+        padding: 2rem; 
+    } 
+  
+    .about .about-image img { 
+        padding: 2rem; 
+    } 
+
+  
+    .my-row { 
+        gap: 10px; 
+    } 
+  
+    .my-row .my-col { 
+        text-align: center; 
+        width: 35%; 
+    } 
+  
+} 
+  
+  
+/* CSS for mobile devices */
+@media screen and (min-width: 280px) and (max-width: 576px) { 
+    .hero { 
+        justify-content: center; 
+        color: #fff; 
+    } 
+
+    body{
+        width: 100%;
+    }
+
+    .navbar {
+       max-width: 100%;
+    }
+
+    .img1p1 > img {
+        width: 280px;
+    }
+
+    .img2p2 > img {
+        width: 280px;
+    }
+  
+    .sub-heading { 
+        color: #fff9f9cc; 
+    } 
+  
+  
+    
+  
+    /* .logo { 
+        padding: 0 2rem; 
+    }  */
+  
+    .menu { 
+        position: absolute; 
+        right: 0; 
+        padding: 0 2rem; 
+        top: 75px; 
+        background-image: linear-gradient(180deg, #35A99C, #53C8B6, #74D7BB); 
+        display: none; 
+        transition: all 0.25s; 
+    } 
+  
+    .menu .menu-list { 
+        flex-direction: column; 
+    } 
+  
+    .hamburger { 
+        display: block; 
+        padding: 0 2rem; 
+        margin-left: 0;
+    } 
+  
+    .about { 
+        flex-direction: column; 
+    } 
+  
+    .about .about-text { 
+        width: 100%; 
+        padding: 1rem; 
+    } 
+  
+    .about .about-image img { 
+        width: 100%; 
+        padding: 1rem; 
+    } 
+  
+
+    .my-row { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        flex-direction: column; 
+        margin: 2rem 0; 
+        gap: 1rem; 
+    } 
+  
+    .my-row .my-col { 
+        text-align: center; 
+        width: 100%; 
+    } 
+  
+    .contact { 
+        padding: 0; 
+    } 
+  
+    .contact-content { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 2rem; 
+    } 
+  
+    .contact-details { 
+        width: 80%; 
+    } 
+  
+}
+
+
+/* Github Calender CSS */
+
+:root {
+    --color-calendar-graph-day-bg: #f1bcbc;
+    --color-calendar-graph-day-L1-bg: #e36868;
+    --color-calendar-graph-day-L2-bg: #9d4040;
+    --color-calendar-graph-day-L3-bg: #723030;
+    --color-calendar-graph-day-L4-bg: #4f2727;
+}
+
+
+rect.ContributionCalendar-day[data-level='0'] {
+    fill: var(--color-calendar-graph-day-bg);
+}
+rect.ContributionCalendar-day[data-level='1'] {
+    fill: var(--color-calendar-graph-day-L1-bg);
+}
+
+rect.ContributionCalendar-day[data-level='2'] {
+    fill: var(--color-calendar-graph-day-L2-bg);
+}
+
+rect.ContributionCalendar-day[data-level='3'] {
+    fill: var(--color-calendar-graph-day-L3-bg);
+}
+
+rect.ContributionCalendar-day[data-level='4'] {
+    fill: var(--color-calendar-graph-day-L4-bg);
+}
+
+.calendar .width-full>.float-left {
+    display: none;
+}
+
+.calendar {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    min-height: 243px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 5px 25px 0px;
+    transition: 0.5s;
+}
+
+.calendar:hover {
+    cursor: pointer;
+}
+
+.calendar-graph text.wday,
+.calendar-graph text.month {
+    font-size: 10px;
+    fill: black;
+}
+
+.contrib-legend {
+    text-align: right;
+    padding: 0 14px 10px 0;
+    display: inline-block;
+}
+
+.contrib-legend .legend {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+    position: relative;
+    bottom: -1px;
+    padding: 0;
+}
+
+.contrib-legend .legend li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.text-small {
+    font-size: 12px;
+    color: #767676;
+}
+
+.calendar-graph {
+    padding: 5px 0 0;
+    text-align: center;
+}
+
+.contrib-column {
+    padding: 15px 0;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.contrib-column-first {
+    border-left: 0;
+}
+
+.table-column {
+    display: table-cell;
+    width: 1%;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.contrib-number {
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 24px;
+    display: block;
+    color: rgb(224, 87, 87);
+    /* color: rgb(87, 224, 98); */
+}
+
+.calendar img.spinner {
+    width: 70px;
+    margin-top: 50px;
+    min-height: 70px;
+}
+
+.monospace {
+    text-align: center;
+    color: #000;
+    font-family: monospace;
+}
+
+.monospace a {
+    color: #1D75AB;
+    text-decoration: none;
+}
+
+
+.contrib-footer {
+    font-size: 11px;
+    padding: 0 10px 12px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    height: 26px;
+}
+
+
+.left.text-muted {
+    float: left;
+    margin-left: 9px;
+    color: #767676;
+}
+
+.left.text-muted a {
+    color: #4078c0;
+    text-decoration: none;
+}
+
+.left.text-muted a:hover,
+.monospace a:hover {
+    text-decoration: underline;
+}
+
+h2.f4.text-normal.mb-3 {
+    display: none;
+}
+
+.float-left.text-gray {
+    float: left;
+}
+
+#user-activity-overview {
+    display: none;
+}
+
+.day-tooltip {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99999;
+    padding: 10px;
+    font-size: 12px;
+    color: #959da5;
+    text-align: center;
+    background: rgba(0, 0, 0, .85);
+    border-radius: 3px;
+    display: none;
+    pointer-events: none;
+}
+
+.day-tooltip strong {
+    color: #dfe2e5;
+}
+
+.day-tooltip.is-visible {
+    display: block;
+}
+
+.day-tooltip:after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    margin: 0 0 0 -5px;
+    content: " ";
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, .85)
+}
+
+text.ContributionCalendar-label {
+    fill: #ccc;
+    font-size: 9px;
+}
+
+@media screen and (max-width: 1024px) {
+    .calendar {
+        width: 95%;
+        min-height: 150px;
+        padding: 10px;
+    }
+
+    .text-small {
+        font-size: 7px;
+    }
+
+    .contrib-number {
+        font-size: 10px;
+    }
+
+    .text-muted {
+        font-size: 7px;
+    }
+    
+    .float-right {
+        font-size: 8px;
+    }
+
+    .d-inline-block {
+        width: 5px;
+        height: 5px;
+    }
+}
