@@ -91,7 +91,7 @@ body {
 }
 
 /* About section styles */
-.about { 
+.about-sec { 
     display: flex; 
     align-items: center; 
     background-color: rgb(32,86,120);
@@ -99,13 +99,13 @@ body {
     width: 100%; 
 } 
   
-.about .about-text { 
+.about-sec .about-text { 
     width: 450px; 
     color: #fff; 
     padding: 5rem 1rem 5rem 5rem; 
 } 
   
-.about .about-image img { 
+.about-sec .about-image img { 
     height: 400px; 
     width: 400px; 
     /* padding: 5rem 5rem 5rem 1rem;  */
@@ -114,7 +114,7 @@ body {
 } 
   
 /* Skills section styles */
-.skills { 
+.skills-sec { 
     margin: 4.8rem 0; 
     padding: 0 5rem; 
     /* background-color: white; */
@@ -138,7 +138,7 @@ body {
 } 
   
 /* Projects section styles */
-.projects { 
+.projects-1 { 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -203,7 +203,7 @@ body {
 }
 
 /* Contact section styles */
-.contact { 
+.contact-1 { 
     padding: 0 5rem; 
     justify-content: center;
     margin: auto;
@@ -305,15 +305,15 @@ body {
         flex-direction: column; 
     } 
   
-    .about { 
+    .about-sec { 
         flex-direction: column; 
     } 
   
-    .about .about-text { 
+    .about-sec .about-text { 
         padding: 2rem; 
     } 
   
-    .about .about-image img { 
+    .about-sec .about-image img { 
         padding: 2rem; 
     } 
 
@@ -384,16 +384,16 @@ body {
         margin-left: 0;
     } 
   
-    .about { 
+    .about-sec { 
         flex-direction: column; 
     } 
   
-    .about .about-text { 
+    .about-sec .about-text { 
         width: 100%; 
         padding: 1rem; 
     } 
   
-    .about .about-image img { 
+    .about-sec .about-image img { 
         width: 100%; 
         padding: 1rem; 
     } 
@@ -413,7 +413,7 @@ body {
         width: 100%; 
     } 
   
-    .contact { 
+    .contact-1 { 
         padding: 0; 
     } 
   
